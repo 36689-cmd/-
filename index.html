@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>SYSTEM</title>
+<style>
+  body {
+    background: black;
+    color: lime;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+
+<div id="text">เริ่มต้นระบบ...</div>
+
+<script>
+  const texts = [
+    "กำลังเชื่อมต่อเซิร์ฟเวอร์...",
+    "ดึงข้อมูลผู้ใช้...",
+    "เจาะระบบสำเร็จ!",
+    "กำลังอัปโหลดข้อมูล...",
+    "เสร็จสิ้น!",
+    "โดนแกล้งแล้ว 😆"
+  ];
+
+  let i = 0;
+  setInterval(() => {
+    if (i < texts.length) {
+      document.getElementById("text").innerText = texts[i];
+      i++;
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
